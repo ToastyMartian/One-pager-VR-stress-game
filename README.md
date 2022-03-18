@@ -1,1 +1,1 @@
-# One-pager-VR-stress-game
+# One pager VR stress game
