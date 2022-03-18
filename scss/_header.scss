@@ -1,0 +1,26 @@
+header {
+    height: 100px;
+    .header-row {
+        &.row1 {
+            .container {
+                .block {
+                    &.logos {
+                        display: flex;
+                        gap: 15px;
+                        align-items: center;
+                        .item {
+                            &.logo {
+                                a {
+                                    img {
+                                        height: 70px;
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

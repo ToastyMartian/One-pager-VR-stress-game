@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  height: 100px;
+}
+
+header .header-row.row1 .container .block.logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-row.row1 .container .block.logos .item.logo a img {
+  height: 70px;
+  width: auto;
+}
+/*# sourceMappingURL=main.css.map */
