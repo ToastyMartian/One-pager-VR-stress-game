@@ -1,0 +1,47 @@
+.main-row {
+  &.row2 {
+    background-color: $main-color;
+    padding: 120px 0 100px;
+    .container {
+      &.text {
+        display: flex;
+        justify-content: space-between;
+        .block {
+          &.image {
+            width: 30%;
+            position: relative;
+            img {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%) translateX(-50%);
+              width: 400px;
+              height: 400px;
+            }
+          }
+          &.text {
+            width: 60%;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              height: calc(100% + 20px);
+              width: 3px;
+              background-color: $second-color;
+              left: -30px;
+            }
+            h2,
+            p {
+              color: $fifth-color;
+              width: 70%;
+            }
+            h2 {
+              margin: 0 0 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
