@@ -1,16 +1,25 @@
 .main-row {
-  &.row3 {
-    background-color: $sixth-color;
-    padding: 100px 0 80px;
-    overflow: hidden;
+  &.row5 {
+    background-color: $main-color;
+    padding: 120px 0 100px;
     .container {
       &.text {
         display: flex;
         justify-content: space-between;
         .block {
+          &.image {
+            width: 30%;
+            position: relative;
+            img {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%) translateX(-50%);
+              height: 400px;
+            }
+          }
           &.text {
             width: 60%;
-            margin-left: auto;
             position: relative;
             &::before {
               content: "";
@@ -19,23 +28,15 @@
               height: calc(100% + 20px);
               width: 3px;
               background-color: $second-color;
-              right: calc(30% - 30px);
+              left: -30px;
             }
             h2,
             p {
               color: $fifth-color;
               width: 70%;
             }
-          }
-          &.image {
-            width: 30%;
-            position: relative;
-            img {
-              position: absolute;
-              top: 60%;
-              right: 0;
-              transform: translateY(-50%);
-              height: 400px;
+            h2 {
+              margin: 0 0 30px;
             }
           }
         }

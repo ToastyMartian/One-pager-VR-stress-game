@@ -1,0 +1,24 @@
+.main-row {
+  &.row4 {
+    height: 40vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .container {
+      &.background {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        h1 {
+          margin: 0;
+          color: $fifth-color;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}

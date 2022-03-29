@@ -15,6 +15,10 @@ $sixth-color: #051a2e; //Dark blue 2.0
 a {
   text-decoration: none;
   color: $fourth-color;
+  transition: 0.2s ease;
+  &:hover {
+    color: $second-color !important;
+  }
 }
 
 body {
