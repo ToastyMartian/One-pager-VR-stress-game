@@ -1,0 +1,45 @@
+.main-row {
+    &.row9 {
+      background-color: $sixth-color;
+      padding: 100px 0 80px;
+      overflow: hidden;
+      .container {
+        &.text {
+          display: flex;
+          justify-content: space-between;
+          .block {
+            &.text {
+              width: 60%;
+              margin-left: auto;
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                height: calc(100% + 20px);
+                width: 3px;
+                background-color: $second-color;
+                right: calc(30% - 30px);
+              }
+              h2,
+              p {
+                color: $fifth-color;
+                width: 70%;
+              }
+            }
+            &.image {
+              width: 30%;
+              position: relative;
+              img {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                height: 400px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
